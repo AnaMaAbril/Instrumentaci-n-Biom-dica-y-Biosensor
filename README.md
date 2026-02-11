@@ -20,4 +20,11 @@ Para la adquisición de la señal respiratoria en este laboratorio se seleccion�
 
 En el contexto de monitoreo respiratorio, los movimientos del tórax se han utilizado extensamente como una variable física indicativa de la ventilación, ya que dicha expansión y retracción generan cambios mecánicos detectables por sensores colocados en la región torácica (Vanegas, Igual & Plaza, 2020). Las revisiones sistemáticas de sistemas de sensado señalan que los dispositivos enfocados en medir la variación de presión o deformación del tórax pueden extraer parámetros como frecuencia respiratoria y patrón ventilatorio de manera no invasiva y continua. Por tanto, el uso de un FSR permite transformar esas variaciones mecánicas en cambios de resistencia que, mediante un circuito de acondicionamiento apropiado, se traducen en señales digitales procesables por un Arduino para la estimación de la frecuencia respiratoria (Vanegas, Igual & Plaza, 2020).
 
-Además, estudios sobre sensores FSR han demostrado que con una calibración adecuada es posible relacionar la fuerza aplicada con la variación de resistencia de manera confiable, lo cual es importante para asegurar la estabilidad y repetibilidad de las mediciones en aplicaciones de monitoreo continuo. 
+Los sensores FSR presentan ventajas importantes en aplicaciones biomédicas portátiles: son delgados, flexibles, de bajo costo y de fácil integración electrónica, ya que su funcionamiento requiere únicamente un divisor de voltaje para convertir los cambios de resistencia en variaciones de voltaje medibles por un convertidor análogo-digital. Estudios técnicos han demostrado que, mediante una calibración adecuada, la relación entre fuerza aplicada y resistencia puede utilizarse de manera consistente para aplicaciones de monitoreo continuo. Por estas razones, el FSR 402 constituye una alternativa viable y funcional para la medición indirecta de la frecuencia respiratoria basada en la detección del movimiento torácico.
+
+<img width="1080" height="487" alt="image" src="https://github.com/user-attachments/assets/5bc3963f-01b2-43f3-9e1b-ccdc72b0fa24" />
+
+
+
+<img width="1080" height="487" alt="image" src="https://github.com/user-attachments/assets/63c72e88-0b7c-4e13-a39f-b5969990b52a" />
+
