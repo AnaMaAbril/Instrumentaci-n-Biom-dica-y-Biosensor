@@ -22,7 +22,8 @@ En el contexto de monitoreo respiratorio, los movimientos del tórax se han util
 
 Los sensores FSR presentan ventajas importantes en aplicaciones biomédicas portátiles: son delgados, flexibles, de bajo costo y de fácil integración electrónica, ya que su funcionamiento requiere únicamente un divisor de voltaje para convertir los cambios de resistencia en variaciones de voltaje medibles por un convertidor análogo-digital. Estudios técnicos han demostrado que, mediante una calibración adecuada, la relación entre fuerza aplicada y resistencia puede utilizarse de manera consistente para aplicaciones de monitoreo continuo. Por estas razones, el FSR 402 constituye una alternativa viable y funcional para la medición indirecta de la frecuencia respiratoria basada en la detección del movimiento torácico.
 
-<img width="1080" height="487" alt="image" src="https://github.com/user-attachments/assets/5bc3963f-01b2-43f3-9e1b-ccdc72b0fa24
+<img width="1080" height="487" alt="image" src="https://github.com/user-attachments/assets/95e06c8f-3f35-4c42-952d-85e01ba3075e" />
+
 
 El sensor FSR 402 se integra al sistema de medición mediante un circuito divisor de voltaje, el cual permite transformar las variaciones de resistencia del sensor en variaciones de voltaje medibles por el microcontrolador. El FSR es un sensor cuya resistencia disminuye cuando aumenta la presión aplicada sobre su superficie. Para poder leer este cambio, se conecta en serie con una resistencia fija de 10 kΩ, formando un divisor de voltaje alimentado con 3.3 V, tensión suministrada por el microcontrolador ESP32.
 
