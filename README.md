@@ -25,6 +25,3 @@ Los sensores FSR presentan ventajas importantes en aplicaciones biomédicas port
 <img width="1080" height="487" alt="image" src="https://github.com/user-attachments/assets/5bc3963f-01b2-43f3-9e1b-ccdc72b0fa24" />
 
 
-
-<img width="1080" height="487" alt="image" src="https://github.com/user-attachments/assets/63c72e88-0b7c-4e13-a39f-b5969990b52a" />
-
