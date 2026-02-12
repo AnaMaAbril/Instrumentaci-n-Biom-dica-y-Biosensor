@@ -174,16 +174,6 @@ La variabilidad puede evaluarse observando cambios en:
 
 Hablar incrementa la variabilidad porque la respiración pasa de ser automática a estar parcialmente controlada de forma voluntaria.
 
-Interpretación fisiológica
-
-Los resultados muestran cómo el sistema respiratorio se adapta a diferentes demandas funcionales:
-
-En reposo: control automático dominado por centros respiratorios del tronco encefálico.
-
-Hablando: intervención de control cortical voluntario, modificando el patrón respiratorio para permitir la fonación.
-
-Esto evidencia la relación entre respiración y producción del habla, donde la espiración se prolonga y la inspiración se vuelve más rápida.
-
 Una vez cargados los datos almacenados, se realiza un procesamiento digital para mejorar la calidad de la señal.
 
 Se diseña un filtro pasa banda Butterworth de segundo orden, con frecuencias de corte entre:
@@ -197,6 +187,12 @@ Este rango corresponde a respiraciones entre 6 y 30 respiraciones por minuto.
 El filtrado se realiza con la función filtfilt, la cual aplica el filtro en ambas direcciones (hacia adelante y hacia atrás), evitando desfase en la señal. Esto es importante porque permite mantener la forma real de la onda respiratoria.
 
 Posteriormente, se grafica la señal original junto con la señal filtrada para visualizar la reducción de ruido y la mejora en la definición de los ciclos respiratorios.
+
+<img width="612" height="231" alt="image" src="https://github.com/user-attachments/assets/62a97122-ba4c-409d-9596-8ca5b038012a" />
+
+
+<img width="537" height="109" alt="image" src="https://github.com/user-attachments/assets/f686cacd-766f-4637-a079-f419ba6544cf" />
+
 
 Para determinar la frecuencia respiratoria dominante, se aplica la Transformada Rápida de Fourier (FFT) a la señal filtrada.
 
