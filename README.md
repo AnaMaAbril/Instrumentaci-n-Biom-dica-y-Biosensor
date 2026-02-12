@@ -62,13 +62,13 @@ El sistema de medición está compuesto por:
 
 Parámetros de conversión:
 
-Voltaje de referencia: 
-𝑉𝑟𝑒𝑓=3.3V
-Resolución del ADC: 
-4095 niveles (12 bits)
+- Voltaje de referencia: 𝑉𝑟𝑒𝑓=3.3V
 
-La conversión de los datos digitales a voltaje se realizó mediante
+- Resolución del ADC: 4095 niveles (12 bits)
+
+- La conversión de los datos digitales a voltaje se realizó mediante
 V=(bits*v_ref)/4095
+
 
 Se implementó un código en MATLAB que realiza las siguientes funciones:
 
