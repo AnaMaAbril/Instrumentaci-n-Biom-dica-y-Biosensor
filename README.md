@@ -120,4 +120,67 @@ Los datos fueron almacenados en:
 
 senal_respiratoria_Hablando.mat
 
+Visualización de las señales
 
+Las gráficas en el dominio del tiempo permiten identificar:
+
+- Periodicidad de la respiración
+
+- Amplitud de los ciclos respiratorios
+
+- Regularidad del patrón respiratorio
+
+
+En reposo, la señal suele ser más periódica y estable. En cambio, al hablar, se observan interrupciones y variaciones asociadas a la fonación.
+
+Frecuencia respiratoria
+
+La frecuencia respiratoria se puede estimar midiendo el tiempo entre picos consecutivos de la señal:
+
+𝐹𝑅=60*(#picos/𝑇)
+
+Donde:
+
+𝑇 es el período promedio entre respiraciones (segundos)
+
+FR se expresa en respiraciones por minuto (rpm)
+
+Comparación:
+
+En reposo: frecuencia más baja y estable
+
+Hablando: frecuencia variable, con pausas o respiraciones más rápidas
+
+Amplitud de la señal:
+
+- La amplitud está relacionada con la profundidad de la respiración.
+
+- En reposo: amplitud relativamente constante
+
+- Hablando: amplitud irregular, con respiraciones más superficiales o forzadas
+
+
+Esto se debe a que el flujo de aire se regula para producir voz, no solo para ventilación pulmonar.
+
+Variabilidad respiratoria
+
+La variabilidad puede evaluarse observando cambios en:
+
+- Distancia entre picos
+
+- Altura de los picos
+
+- Forma del ciclo respiratorio
+  
+
+Hablar incrementa la variabilidad porque la respiración pasa de ser automática a estar parcialmente controlada de forma voluntaria.
+
+Interpretación fisiológica
+
+Los resultados muestran cómo el sistema respiratorio se adapta a diferentes demandas funcionales:
+
+En reposo: control automático dominado por centros respiratorios del tronco encefálico.
+
+Hablando: intervención de control cortical voluntario, modificando el patrón respiratorio para permitir la fonación.
+
+Esto evidencia la relación entre respiración y producción del habla, donde la espiración se prolonga y la inspiración se vuelve más rápida.
