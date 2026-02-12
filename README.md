@@ -69,4 +69,18 @@ Resolución del ADC:
 La conversión de los datos digitales a voltaje se realizó mediante
 V=(bits*v_ref)/4095
 
+Se implementó un código en MATLAB que realiza las siguientes funciones:
+
+1. Establece la conexión serial con el microcontrolador.
+
+2. Lee continuamente los valores digitales enviados por el ADC.
+
+3. Convierte los valores digitales a voltaje.
+
+4. Asigna una marca de tiempo a cada muestra usando la función tic–toc.
+
+5. Grafica la señal en tiempo real mediante un buffer deslizante de 300 muestras.
+
+6. Guarda los datos de tiempo y voltaje en archivos .mat para su posterior análisis.
+
 
