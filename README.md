@@ -184,3 +184,19 @@ En reposo: control automático dominado por centros respiratorios del tronco enc
 Hablando: intervención de control cortical voluntario, modificando el patrón respiratorio para permitir la fonación.
 
 Esto evidencia la relación entre respiración y producción del habla, donde la espiración se prolonga y la inspiración se vuelve más rápida.
+
+REFERENCIAS 
+
+- https://pubmed.ncbi.nlm.nih.gov/22154694/
+
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC7570710/?utm_source.com
+
+- https://pubmed.ncbi.nlm.nih.gov/21560260/
+
+- https://booksmedicos.org/west-fisiologia-respiratoria-fundamentos-10a-edicion/
+
+- https://www.mdpi.com/1424-8220/20/18/5446
+  
+- https://repository.udistrital.edu.co/server/api/core/bitstreams/afbc8df0-5093-424d-ab25-ebc7d4725f16/content
+  
+- https://revistamedica.com/dispositivos-monitorizacion-tiempo-real-efectividad/
