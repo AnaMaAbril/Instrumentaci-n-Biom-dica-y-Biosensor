@@ -196,8 +196,6 @@ El filtrado se realiza con la función filtfilt, la cual aplica el filtro en amb
 
 Posteriormente, se grafica la señal original junto con la señal filtrada para visualizar la reducción de ruido y la mejora en la definición de los ciclos respiratorios.
 
-<img width="995" height="624" alt="image" src="https://github.com/user-attachments/assets/23aeac83-1ace-4fe8-97ba-cf87e3816782" />
-
 Para determinar la frecuencia respiratoria dominante, se aplica la Transformada Rápida de Fourier (FFT) a la señal filtrada.
 
 Este procedimiento permite convertir la señal del dominio del tiempo al dominio de la frecuencia, obteniendo el espectro de magnitud. En el espectro:
