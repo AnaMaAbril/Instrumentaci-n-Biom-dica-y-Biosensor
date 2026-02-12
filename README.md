@@ -36,3 +36,15 @@ Para captar adecuadamente el movimiento respiratorio, el sensor FSR 402 se coloc
 Durante la inspiración, el descenso del diafragma y la expansión del tórax producen un aumento de presión contra el sensor; durante la espiración, la presión disminuye. Estas variaciones mecánicas se traducen en cambios de resistencia en el FSR y, por lo tanto, en variaciones de voltaje en el circuito. La señal obtenida corresponde a una forma de onda periódica asociada al ciclo respiratorio. Una vez digitalizada por el ESP32, esta señal se envía al computador, donde puede ser graficada y analizada para determinar parámetros como la frecuencia respiratoria
 
 
+
+Inicialmente se desarrolló un programa en el entorno Arduino IDE para configurar el microcontrolador ESP32 como sistema de adquisición de datos. En este programa se estableció la lectura continua de la señal analógica proveniente del sensor FSR 402 a través del pin GPIO 34, utilizando el conversor análogo-digital (ADC) interno del microcontrolador. El código se diseñó para muestrear la señal a intervalos regulares y enviar los valores digitalizados en tiempo real al computador mediante comunicación serial a través del puerto USB.
+
+Esta etapa permitió verificar el correcto funcionamiento del sensor, del circuito divisor de voltaje y de la lectura analógica, asegurando que las variaciones de presión generadas por la respiración se reflejaran en cambios detectables en la señal adquirida.
+
+<img width="632" height="430" alt="image" src="https://github.com/user-attachments/assets/c95d8756-a4ee-4ba9-8c30-77ab750b3752" />
+
+Posteriormente, los datos enviados por el ESP32 fueron recibidos en MATLAB, donde se implementó un script para la lectura del puerto serial y la visualización de la señal respiratoria en tiempo real. El programa en MATLAB permitió graficar de manera dinámica la señal proveniente del sensor, mostrando las variaciones asociadas a los ciclos de inspiración y espiración.
+
+Además, se incorporó una funcionalidad que permite al usuario seleccionar el tiempo de duración de la adquisición, de modo que la captura de datos pudiera adaptarse a diferentes pruebas experimentales. Durante el tiempo establecido, MATLAB almacena los valores recibidos y los representa gráficamente de forma continua, lo que facilita la observación del comportamiento respiratorio y el posterior análisis de parámetros como la frecuencia respiratoria.
+
+
