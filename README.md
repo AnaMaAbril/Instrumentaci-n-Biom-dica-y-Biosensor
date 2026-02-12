@@ -212,6 +212,12 @@ La señal respiratoria adquirida con el sensor FSR, donde la traza gris correspo
 
 <img width="995" height="624" alt="image" src="https://github.com/user-attachments/assets/2c2c3fe7-64c6-4869-8d17-ac4a4d2c66e4" />
 
+Ahora se realizo lo mismo pero la persona hablando. En la señal cruda captada por el sensor. Se mantiene alrededor de un nivel base cercano a 2.5 V, lo cual indica que existe un offset DC (componente continua). Sobre ese nivel se ven pequeñas variaciones y picos que corresponden a la actividad generada mientras la persona habla. Sin embargo, también contiene ruido y componentes no deseadas. Se filtro la señal que da como resultado aplicar un filtro para eliminar el componente DC y reducir el ruido. Por eso ahora está centrada alrededor de 0 V. Aquí se aprecian con mayor claridad las variaciones dinámicas de la señal producidas por el habla.
+
+<img width="978" height="612" alt="image" src="https://github.com/user-attachments/assets/5f361f45-b078-440b-8901-6f8a1939ce0e" />
+
+
+
 
 
 REFERENCIAS 
