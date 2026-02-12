@@ -51,13 +51,14 @@ Configuración del sistema
 
 El sistema de medición está compuesto por:
 
-Sensor de respiración (salida analógica proporcional al movimiento respiratorio)
+- Sensor de respiración (salida analógica proporcional al movimiento respiratorio)
 
-Microcontrolador con convertidor análogo–digital (ADC de 12 bits)
+- Microcontrolador con convertidor análogo–digital (ADC de 12 bits)
 
-Comunicación serial vía puerto COM34 a 115200 baudios
+- Comunicación serial vía puerto COM34 a 115200 baudios
 
-Entorno MATLAB para visualización, almacenamiento y procesamiento de datos
+- Entorno MATLAB para visualización, almacenamiento y procesamiento de datos
+
 
 Parámetros de conversión:
 
