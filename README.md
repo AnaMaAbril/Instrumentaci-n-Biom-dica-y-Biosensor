@@ -47,4 +47,26 @@ Posteriormente, los datos enviados por el ESP32 fueron recibidos en MATLAB, dond
 
 Además, se incorporó una funcionalidad que permite al usuario seleccionar el tiempo de duración de la adquisición, de modo que la captura de datos pudiera adaptarse a diferentes pruebas experimentales. Durante el tiempo establecido, MATLAB almacena los valores recibidos y los representa gráficamente de forma continua, lo que facilita la observación del comportamiento respiratorio y el posterior análisis de parámetros como la frecuencia respiratoria.
 
+Configuración del sistema
+
+El sistema de medición está compuesto por:
+
+Sensor de respiración (salida analógica proporcional al movimiento respiratorio)
+
+Microcontrolador con convertidor análogo–digital (ADC de 12 bits)
+
+Comunicación serial vía puerto COM34 a 115200 baudios
+
+Entorno MATLAB para visualización, almacenamiento y procesamiento de datos
+
+Parámetros de conversión:
+
+Voltaje de referencia: 
+𝑉𝑟𝑒𝑓=3.3V
+Resolución del ADC: 
+4095 niveles (12 bits)
+
+La conversión de los datos digitales a voltaje se realizó mediante
+V=(bits*v_ref)/4095
+
 
