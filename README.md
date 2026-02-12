@@ -84,4 +84,40 @@ Se implementó un código en MATLAB que realiza las siguientes funciones:
 
 6. Guarda los datos de tiempo y voltaje en archivos .mat para su posterior análisis.
 
+Señal respiratoria en reposo
+
+El sujeto permaneció en estado de reposo, respirando de manera natural y sin hablar. La señal obtenida presenta un comportamiento periódico relativamente estable, con variaciones suaves de amplitud asociadas a los ciclos de inspiración y espiración.
+
+Características:
+
+- Frecuencia respiratoria baja y regular
+
+- Amplitud moderada
+
+- Forma de onda suave y repetitiva
+
+
+Los datos fueron almacenados en:
+
+senal_respiratoria_reposo.mat
+
+Señal respiratoria hablando
+
+Durante esta medición, el sujeto habló continuamente. Esto introduce perturbaciones en el patrón respiratorio debido al control voluntario de la respiración para la producción de voz.
+
+Características observadas:
+
+- rregularidad en la frecuencia respiratoria
+
+- Cambios bruscos de amplitud
+
+- Pausas respiratorias más cortas o forzadas
+
+- Mayor variabilidad en la señal
+
+
+Los datos fueron almacenados en:
+
+senal_respiratoria_Hablando.mat
+
 
