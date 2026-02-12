@@ -29,12 +29,14 @@ El sensor FSR 402 se integra al sistema de medición mediante un circuito diviso
 
 El punto medio del divisor de voltaje se conecta a la entrada analógica GPIO 34 (D34) del ESP32. De esta manera, cuando la presión sobre el sensor cambia debido al movimiento respiratorio, también cambia la resistencia del FSR, lo que modifica el voltaje en el punto de lectura. Este voltaje es convertido a un valor digital por el conversor análogo-digital (ADC) interno del ESP32. Posteriormente, los datos digitalizados pueden enviarse al computador mediante comunicación serial (USB) para su visualización y procesamiento.
 
+<img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/0095349a-8498-4a8e-837e-25d47e810434" />
 
 
 Para captar adecuadamente el movimiento respiratorio, el sensor FSR 402 se coloca sobre la parte superior del abdomen o la zona inferior del tórax, cerca de la región del diafragma. Se utiliza una venda elástica para mantener el sensor en contacto firme pero cómodo con la superficie del cuerpo. Esta sujeción permite que el sensor detecte las variaciones de presión generadas por la expansión y contracción de la pared torácica durante la respiración.
 
 Durante la inspiración, el descenso del diafragma y la expansión del tórax producen un aumento de presión contra el sensor; durante la espiración, la presión disminuye. Estas variaciones mecánicas se traducen en cambios de resistencia en el FSR y, por lo tanto, en variaciones de voltaje en el circuito. La señal obtenida corresponde a una forma de onda periódica asociada al ciclo respiratorio. Una vez digitalizada por el ESP32, esta señal se envía al computador, donde puede ser graficada y analizada para determinar parámetros como la frecuencia respiratoria
 
+<img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/65ffe4b1-59ec-4afe-9607-4b6c7ce3d1a9" />
 
 
 Inicialmente se desarrolló un programa en el entorno Arduino IDE para configurar el microcontrolador ESP32 como sistema de adquisición de datos. En este programa se estableció la lectura continua de la señal analógica proveniente del sensor FSR 402 a través del pin GPIO 34, utilizando el conversor análogo-digital (ADC) interno del microcontrolador. El código se diseñó para muestrear la señal a intervalos regulares y enviar los valores digitalizados en tiempo real al computador mediante comunicación serial a través del puerto USB.
@@ -99,7 +101,7 @@ Características:
 
 Los datos fueron almacenados en:
 
-senal_respiratoria_reposo.mat
+toma_respiracion.mat
 
 Señal respiratoria hablando
 
@@ -114,11 +116,6 @@ Características observadas:
 - Pausas respiratorias más cortas o forzadas
 
 - Mayor variabilidad en la señal
-
-
-Los datos fueron almacenados en:
-
-senal_respiratoria_Hablando.mat
 
 Visualización de las señales
 
@@ -184,6 +181,40 @@ En reposo: control automático dominado por centros respiratorios del tronco enc
 Hablando: intervención de control cortical voluntario, modificando el patrón respiratorio para permitir la fonación.
 
 Esto evidencia la relación entre respiración y producción del habla, donde la espiración se prolonga y la inspiración se vuelve más rápida.
+
+Una vez cargados los datos almacenados, se realiza un procesamiento digital para mejorar la calidad de la señal.
+
+Se diseña un filtro pasa banda Butterworth de segundo orden, con frecuencias de corte entre:
+
+0.1 Hz (frecuencia mínima respiratoria esperada)
+
+0.5 Hz (frecuencia máxima respiratoria esperada)
+
+Este rango corresponde a respiraciones entre 6 y 30 respiraciones por minuto.
+
+El filtrado se realiza con la función filtfilt, la cual aplica el filtro en ambas direcciones (hacia adelante y hacia atrás), evitando desfase en la señal. Esto es importante porque permite mantener la forma real de la onda respiratoria.
+
+Posteriormente, se grafica la señal original junto con la señal filtrada para visualizar la reducción de ruido y la mejora en la definición de los ciclos respiratorios.
+
+<img width="995" height="624" alt="image" src="https://github.com/user-attachments/assets/23aeac83-1ace-4fe8-97ba-cf87e3816782" />
+
+Para determinar la frecuencia respiratoria dominante, se aplica la Transformada Rápida de Fourier (FFT) a la señal filtrada.
+
+Este procedimiento permite convertir la señal del dominio del tiempo al dominio de la frecuencia, obteniendo el espectro de magnitud. En el espectro:
+
+Se identifican las frecuencias presentes en la señal.
+
+Se busca la frecuencia con mayor magnitud (pico dominante).
+
+Esta frecuencia corresponde a la frecuencia respiratoria principal.
+
+Solo se analiza la mitad del espectro (frecuencias positivas) y se limita la gráfica hasta 2 Hz para enfocarse en el rango fisiológico relevante.
+
+La señal respiratoria adquirida con el sensor FSR, donde la traza gris corresponde a la señal original y la traza roja a la señal filtrada. La señal original presenta variaciones de voltaje asociadas al movimiento torácico, pero también contiene ruido y fluctuaciones rápidas que no están relacionadas directamente con el ciclo respiratorio, posiblemente debidas a pequeños movimientos del cuerpo o a interferencias eléctricas. Tras aplicar el filtro pasa banda, la señal filtrada muestra una forma de onda más suave y periódica, en la que se distinguen claramente los ciclos de inspiración y espiración. Esta forma oscilatoria regular confirma que el procesamiento permitió resaltar la componente respiratoria principal, facilitando la identificación de la frecuencia respiratoria y el análisis del patrón ventilatorio a lo largo del tiempo.
+
+<img width="995" height="624" alt="image" src="https://github.com/user-attachments/assets/2c2c3fe7-64c6-4869-8d17-ac4a4d2c66e4" />
+
+
 
 REFERENCIAS 
 
