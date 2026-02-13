@@ -214,6 +214,46 @@ Ahora se realizo lo mismo pero la persona hablando. En la señal cruda captada p
 
 <img width="978" height="612" alt="image" src="https://github.com/user-attachments/assets/5f361f45-b078-440b-8901-6f8a1939ce0e" />
 
+Cuando la persona está en reposo, la señal respiratoria presenta un patrón más regular, rítmico y estable, con ciclos de inhalación y exhalación uniformes. Esto se debe a que la respiración está controlada principalmente por mecanismos automáticos del sistema nervioso, sin interferencias externas importantes.
+
+En cambio, durante el habla, la respiración se vuelve irregular y menos periódica. Se observan variaciones en la amplitud y en la duración de los ciclos respiratorios. Esto ocurre porque al hablar:
+
+- La respiración deja de ser completamente automática
+
+- Se modifica el flujo de aire para producir sonido
+
+- Las exhalaciones se prolongan para poder emitir frases
+
+- Las inhalaciones son más rápidas y estratégicas
+
+Es decir, la respiración pasa a estar parcialmente controlada de forma voluntaria y coordinada con el sistema fonador, lo que altera tanto el patrón como la frecuencia respiratoria.
+
+El uso de múltiples sensores para monitorear la respiración tiene varias implicaciones:
+
+Ventajas
+
+- Mayor precisión: Permite comparar señales de diferentes zonas (tórax, abdomen, flujo de aire, etc.) y obtener una visión más completa del proceso respiratorio.
+
+- Detección de irregularidades locales: Se pueden identificar diferencias entre respiración torácica y abdominal.
+
+- Reducción de errores: Si un sensor falla o capta ruido, los otros pueden servir como referencia.
+
+- Mejor análisis de patrones complejos: Como ocurre al hablar, toser o hacer ejercicio.
+
+Desventajas
+
+- Mayor complejidad del sistema: Más sensores implican más cables, más procesamiento y mayor dificultad de instalación.
+
+- Incomodidad para el paciente: Puede limitar el movimiento natural y alterar la respiración.
+
+- Mayor costo: Tanto en hardware como en procesamiento de datos.
+
+- Más ruido y artefactos por movimiento: Especialmente si la persona está hablando o gesticulando.
+
+CONCLUSIÓN 
+
+Las diferencias observadas entre las gráficas demuestran que la respiración no es un proceso fijo, sino que se adapta a la actividad que realiza la persona. El habla modifica el ritmo respiratorio para ajustarlo a las necesidades de la producción de voz. Además, aunque el uso de múltiples sensores puede mejorar la calidad y confiabilidad del monitoreo respiratorio, también introduce desafíos técnicos y prácticos que deben considerarse según el objetivo del estudio o aplicación clínica.
+
 
 
 
