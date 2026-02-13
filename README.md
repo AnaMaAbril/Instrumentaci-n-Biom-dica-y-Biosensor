@@ -2,8 +2,8 @@
 
 # LABORATORIO #1: MONITOREO DEL PATRÓN Y FRECUENCIA RESPIRATORIA
 
-## LEIDY VALENTINA RODRÍGUEZ GÓMEZ 
-ANA MARIA ABRIL GÓMEZ
+##LEIDY VALENTINA RODRÍGUEZ GÓMEZ 
+##ANA MARIA ABRIL GÓMEZ
 
 La fisiología respiratoria describe los mecanismos mediante los cuales el sistema respiratorio permite el intercambio de gases entre el organismo y el ambiente. Este proceso depende principalmente de la ventilación pulmonar, que es el movimiento de aire hacia dentro y fuera de los pulmones generado por cambios de presión producidos por la acción del diafragma y los músculos intercostales. Durante la inspiración, el aumento del volumen torácico reduce la presión intrapulmonar, permitiendo la entrada de aire; en la espiración ocurre el proceso inverso. Estas variaciones de presión, volumen y flujo de aire constituyen las principales variables físicas asociadas a la respiración. Además, la frecuencia respiratoria y el patrón ventilatorio están regulados por centros nerviosos en el tronco encefálico, que ajustan la ventilación según las necesidades metabólicas del organismo.
 La ventilación ocurre gracias a la acción de los músculos respiratorios:
