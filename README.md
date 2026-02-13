@@ -222,6 +222,16 @@ Ahora se realizo lo mismo pero la persona hablando. En la señal cruda captada p
 
 <img width="978" height="612" alt="image" src="https://github.com/user-attachments/assets/5f361f45-b078-440b-8901-6f8a1939ce0e" />
 
+En el espectro correspondiente a la condición de reposo, se observa un pico dominante claramente definido en 0.2 Hz, con una magnitud aproximada de 0.122. Esto indica que la mayor parte de la energía de la señal está concentrada en esa frecuencia, lo que corresponde a una respiración de aproximadamente 12 respiraciones por minuto. Además, el espectro muestra poca dispersión en otras frecuencias, lo que refleja un patrón respiratorio regular y estable, característico de la respiración en estado de reposo.
+
+<img width="990" height="625" alt="image" src="https://github.com/user-attachments/assets/63e12132-240d-40fc-be1b-42e60bed894b" />
+
+En el espectro de la condición hablando, el pico dominante se encuentra en 0.1333 Hz, con una magnitud menor (aproximadamente 0.036). Esto corresponde a una frecuencia respiratoria de 8 respiraciones por minuto. A diferencia del reposo, el espectro presenta mayor dispersión de energía en frecuencias cercanas, lo que sugiere una respiración menos periódica y más variable. Esta diferencia se debe a que durante el habla la respiración se modifica voluntariamente, prolongando las exhalaciones y alterando el ritmo natural.
+
+<img width="989" height="624" alt="image" src="https://github.com/user-attachments/assets/c6e5d4d0-ad96-4949-99a7-43981618c5e9" />
+
+
+
 En condición de reposo, se obtuvo una frecuencia dominante de 0.2 Hz, equivalente a 12 respiraciones por minuto, lo cual se encuentra dentro del rango normal de respiración tranquila en adultos. Además, el patrón respiratorio en este estado suele ser más regular y estable, ya que está controlado principalmente por mecanismos automáticos del sistema nervioso.
 
 Por otro lado, en la condición de habla, la frecuencia dominante disminuye a 0.13333 Hz, correspondiente a 8 respiraciones por minuto. Esta reducción en la frecuencia respiratoria se debe a que al hablar, la persona realiza exhalaciones más largas y controladas para poder emitir frases completas, mientras que las inhalaciones se vuelven más cortas y estratégicas. Esto altera el ritmo natural de la respiración y la hace menos periódica.
