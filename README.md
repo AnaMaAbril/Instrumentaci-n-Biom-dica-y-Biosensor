@@ -1,6 +1,11 @@
 
 
-# Instrumentaci-n-Biom-dica-y-Biosensor
+# LABORATORIO #1: MONITOREO DEL PATRÓN Y FRECUENCIA RESPIRATORIA
+
+# LEIDY VALENTINA RODRÍGUEZ GÓMEZ 
+
+# ANA MARIA ABRIL GÓMEZ
+
 La fisiología respiratoria describe los mecanismos mediante los cuales el sistema respiratorio permite el intercambio de gases entre el organismo y el ambiente. Este proceso depende principalmente de la ventilación pulmonar, que es el movimiento de aire hacia dentro y fuera de los pulmones generado por cambios de presión producidos por la acción del diafragma y los músculos intercostales. Durante la inspiración, el aumento del volumen torácico reduce la presión intrapulmonar, permitiendo la entrada de aire; en la espiración ocurre el proceso inverso. Estas variaciones de presión, volumen y flujo de aire constituyen las principales variables físicas asociadas a la respiración. Además, la frecuencia respiratoria y el patrón ventilatorio están regulados por centros nerviosos en el tronco encefálico, que ajustan la ventilación según las necesidades metabólicas del organismo.
 La ventilación ocurre gracias a la acción de los músculos respiratorios:
 Diafragma (principal músculo)
@@ -204,7 +209,10 @@ Se busca la frecuencia con mayor magnitud (pico dominante).
 
 Esta frecuencia corresponde a la frecuencia respiratoria principal.
 
-Solo se analiza la mitad del espectro (frecuencias positivas) y se limita la gráfica hasta 2 Hz para enfocarse en el rango fisiológico relevante.
+Para analizar la frecuencia respiratoria, las señales registradas en el dominio del tiempo fueron transformadas al dominio de la frecuencia mediante la Transformada Rápida de Fourier (FFT). Mientras que en el dominio del tiempo la señal muestra cómo varía el voltaje respiratorio a lo largo de los segundos, este tipo de representación no permite identificar fácilmente la periodicidad dominante. Por ello, se aplicó la FFT a la señal previamente filtrada, lo que permitió descomponerla en sus componentes sinusoidales y obtener su contenido espectral. A partir del espectro de magnitud, se identificó la frecuencia con mayor amplitud, la cual corresponde a la frecuencia dominante de la respiración. Esta frecuencia, expresada en Hertz (ciclos por segundo), se multiplicó por 60 para convertirla a respiraciones por minuto. De esta manera, el análisis en el dominio de la frecuencia facilitó una estimación objetiva y precisa de la frecuencia respiratoria, permitiendo comparar las condiciones de reposo y habla de forma cuantitativa.
+
+<img width="240" height="105" alt="image" src="https://github.com/user-attachments/assets/08bc50f7-c89d-4891-91bb-743202b9ddb1" />
+
 
 La señal respiratoria adquirida con el sensor FSR, donde la traza gris corresponde a la señal original y la traza roja a la señal filtrada. La señal original presenta variaciones de voltaje asociadas al movimiento torácico, pero también contiene ruido y fluctuaciones rápidas que no están relacionadas directamente con el ciclo respiratorio, posiblemente debidas a pequeños movimientos del cuerpo o a interferencias eléctricas. Tras aplicar el filtro pasa banda, la señal filtrada muestra una forma de onda más suave y periódica, en la que se distinguen claramente los ciclos de inspiración y espiración. Esta forma oscilatoria regular confirma que el procesamiento permitió resaltar la componente respiratoria principal, facilitando la identificación de la frecuencia respiratoria y el análisis del patrón ventilatorio a lo largo del tiempo.
 
@@ -213,6 +221,15 @@ La señal respiratoria adquirida con el sensor FSR, donde la traza gris correspo
 Ahora se realizo lo mismo pero la persona hablando. En la señal cruda captada por el sensor. Se mantiene alrededor de un nivel base cercano a 2.5 V, lo cual indica que existe un offset DC (componente continua). Sobre ese nivel se ven pequeñas variaciones y picos que corresponden a la actividad generada mientras la persona habla. Sin embargo, también contiene ruido y componentes no deseadas. Se filtro la señal que da como resultado aplicar un filtro para eliminar el componente DC y reducir el ruido. Por eso ahora está centrada alrededor de 0 V. Aquí se aprecian con mayor claridad las variaciones dinámicas de la señal producidas por el habla.
 
 <img width="978" height="612" alt="image" src="https://github.com/user-attachments/assets/5f361f45-b078-440b-8901-6f8a1939ce0e" />
+
+En condición de reposo, se obtuvo una frecuencia dominante de 0.2 Hz, equivalente a 12 respiraciones por minuto, lo cual se encuentra dentro del rango normal de respiración tranquila en adultos. Además, el patrón respiratorio en este estado suele ser más regular y estable, ya que está controlado principalmente por mecanismos automáticos del sistema nervioso.
+
+Por otro lado, en la condición de habla, la frecuencia dominante disminuye a 0.13333 Hz, correspondiente a 8 respiraciones por minuto. Esta reducción en la frecuencia respiratoria se debe a que al hablar, la persona realiza exhalaciones más largas y controladas para poder emitir frases completas, mientras que las inhalaciones se vuelven más cortas y estratégicas. Esto altera el ritmo natural de la respiración y la hace menos periódica.
+
+Estos resultados confirman que los patrones respiratorios no son iguales en ambas situaciones. Mientras que en reposo la respiración es automática y rítmica, durante el habla se vuelve un proceso parcialmente voluntario, coordinado con el sistema fonador. Por esta razón, disminuye la frecuencia respiratoria y cambia la forma de la señal.
+
+<img width="431" height="236" alt="image" src="https://github.com/user-attachments/assets/6289fd49-964d-4e9a-97ac-9da9543008fc" />
+
 
 Cuando la persona está en reposo, la señal respiratoria presenta un patrón más regular, rítmico y estable, con ciclos de inhalación y exhalación uniformes. Esto se debe a que la respiración está controlada principalmente por mecanismos automáticos del sistema nervioso, sin interferencias externas importantes.
 
